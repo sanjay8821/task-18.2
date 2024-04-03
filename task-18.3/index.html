@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="getAllPosts()">
+    <div class="container">
+      <div class="form-container" id="myForm">
+        <form onsubmit="submitPost(event)">
+          <div class="row">
+            <label class="label">Title: </label>
+            <input id="title" class="myInput" type="text" />
+          </div>
+          <div class="row">
+            <label class="label">Body: </label>
+            <textarea id="body" type="text" class="myTextArea"></textarea>
+          </div>
+          <div class="row">
+            <label class="label">User ID: </label>
+            <input id="userId" class="myInput" type="text" />
+          </div>
+          <div class="row">
+            <button class="myButton" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="post-container" id="postContainer"></div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
